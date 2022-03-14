@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>    
+    <form name=encform id="encform">
+    <p>
+    <textarea name=box1 id="box1" rows=5 cols=80></textarea>
+    <p>
+    <input type=button value="Encode:" onClick="Encode();">
+    <input type=button value="Decode:" onClick="Decode();">
+    <label for="Keycode">Key:</label>
+    <input type="number" min="1" max="10" id="userKey" value="1" onchange="Encode();" />    
+    </p>
+    <br>   
+    <br><p>
+    <textarea name=box2 id="box2" rows=5 cols=80></textarea>
+    </p> 
+    <br>
+    <p>
+    <textarea name=box3 id="box3" rows=5 cols=80></textarea>   
+    </p>
+    </form>  
+      
+    
+    <script src="ceasercode.js"></script>
+  </body>
+</html>
